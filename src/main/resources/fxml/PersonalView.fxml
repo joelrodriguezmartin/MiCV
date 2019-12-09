@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" maxWidth="1.7976931348623157E308">
+         <children>
+            <Label alignment="CENTER_RIGHT" minWidth="-Infinity" prefWidth="120.0" text="DNI/NIE/Pasaporte: " />
+            <TextField fx:id="dniText" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" maxWidth="1.7976931348623157E308">
+         <children>
+            <Label alignment="CENTER_RIGHT" minWidth="-Infinity" prefWidth="120.0" text="Nombre: " />
+            <TextField fx:id="nombreText" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" maxWidth="1.7976931348623157E308">
+         <children>
+            <Label alignment="CENTER_RIGHT" minWidth="-Infinity" prefWidth="120.0" text="Apellidos: " />
+            <TextField fx:id="apellidosText" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308">
+         <children>
+            <Label alignment="CENTER_RIGHT" minWidth="-Infinity" prefWidth="120.0" text="Fecha de nacimiento: " />
+            <DatePicker fx:id="fechaDate" maxWidth="1.7976931348623157E308" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox maxWidth="1.7976931348623157E308">
+         <children>
+            <Label alignment="CENTER_RIGHT" minWidth="-Infinity" prefWidth="120.0" text="Dirección: " />
+            <TextField fx:id="direccionText" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308">
+         <children>
+            <Label alignment="CENTER_RIGHT" minWidth="-Infinity" prefWidth="120.0" text="Código Postal: " />
+            <TextField fx:id="postalText" prefColumnCount="5" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" maxWidth="1.7976931348623157E308">
+         <children>
+            <Label alignment="CENTER_RIGHT" minWidth="-Infinity" prefWidth="120.0" text="Localidad: " />
+            <TextField fx:id="localidadText" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308">
+         <children>
+            <Label alignment="CENTER_RIGHT" minWidth="-Infinity" prefWidth="120.0" text="País: " />
+            <ComboBox fx:id="paisCombo" promptText="Seleccione un pais" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox maxWidth="1.7976931348623157E308">
+         <children>
+            <Label alignment="CENTER_RIGHT" minWidth="-Infinity" prefWidth="120.0" text="Nacionalidad: " />
+            <ListView fx:id="nacionalidadList" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="añadirNacButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="+">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="eliminarNacButton" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="-">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
